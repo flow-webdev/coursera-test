@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Class Selectors</title>
+    <style>
+        header,
+        li {
+            list-style: none;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            background-color: olivedrab;
+            border: 1px solid red;
+            color: black;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 1px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        a:hover,
+        a:active {
+            background-color: red;
+            color: yellow;
+        }
+
+        header li:nth-child(1) {
+            font-size: 24px;
+        }
+
+        section div:nth-child(odd) {
+            background-color: grey;
+        }
+
+        section div:nth-child(even) {
+            background-color: silver;
+        }
+
+        section:hover div:nth-child(4) {
+            background-color: green;
+            cursor: pointer;
+        }
+
+        section div:nth-child(8):hover {
+            background-color: red;
+            font-size: 20px;
+        }
+
+        article.primo {
+            color: indigo;
+            font-size: 1em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        article:nth-child(3) {
+            color: tomato;
+            font-family: fantasy;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Pseudo-Class Selectors</h1>
+    <header>
+        <ul>
+            <li><a href="../index.html" target="_blank">Home</a></li>
+            <li><a href="cssSelectors.html">Selectors</a></li>
+            <li><a href="images.html">Images</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div>DIV1</div>
+        <div>DIV2</div>
+        <div>DIV3</div>
+        <div>DIV4</div>
+        <div>DIV5</div>
+        <div>DIV6</div>
+        <div>DIV7</div>
+        <div>DIV8</div>
+    </section>
+    <br>
+    <hr>
+
+    <section>
+        <article class="primo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+        <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+        <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+    </section>
+    <br>
+    <hr>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+</body>
+
+</html>

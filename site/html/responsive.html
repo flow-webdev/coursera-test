@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            border: 1px solid;
+            background-color: rgb(10, 10, 133);
+            width: 90%;
+            height: 150px;
+            margin-right: auto;
+            margin-left: auto;
+            font-family: serif;
+            color: white;
+        }
+
+        /*simple responsive framework*/
+        .row {
+            width: 100%;
+        }
+
+        /*****Large device******/
+        @media(min-width:1200px) {
+            .lg-3 {
+                float: left;
+                border: 1px solid green;
+            }
+        }
+
+        .lg-3 {
+            width: 25%;
+        }
+
+        /*****Medium device******/
+        @media(min-width:950px) and (max-width:1199px) {
+            .md-6 {
+                float: left;
+                border: 1px solid green;
+            }
+        }
+
+        .md-6 {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive Layout</h1>
+    <div class="row">
+
+        <div class="lg-3 md-6">
+            <p>Item 1</p>
+        </div>
+        <div class="lg-3 md-6">
+            <p>Item 2</p>
+        </div>
+        <div class="lg-3 md-6">
+            <p>Item 3</p>
+        </div>
+        <div class="lg-3 md-6">
+            <p>Item 4</p>
+        </div>
+        <div class="lg-3 md-6">
+            <p>Item 5</p>
+        </div>
+        <div class="lg-3 md-6">
+            <p>Item 6</p>
+        </div>
+        <div class="lg-3 md-6">
+            <p>Item 7</p>
+        </div>
+        <div class="lg-3 md-6">
+            <p>Item 8</p>
+        </div>
+
+    </div>
+
+    <br>
+    <hr>
+
+    Home: <a href="../index.html">Home</a>
+
+</body>
+
+</html>
